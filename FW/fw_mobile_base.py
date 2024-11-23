@@ -19,7 +19,6 @@ class FwMobileBase(FWBase):
     def click_by_xpath(self, locator):
         element = self.find_element(by=AppiumBy.XPATH, value=locator)
         element.click()
-        return element
 
     def appium_driver_sleep(self, time):
         self.get_driver().implicitly_wait(time)

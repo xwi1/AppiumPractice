@@ -1,8 +1,10 @@
+import time
+
 from FW.fw_mobile_base import FwMobileBase
 
 class Locator:
     button_skip = '//android.widget.Button[@content-desc="Пропустить"]'
-    change_week = '//android.widget.Button[@content-desc="ВН / НН"]'
+    skip_tutorial = '//android.widget.EditText'
 
 
 class StartScreen(FwMobileBase):
@@ -11,6 +13,10 @@ class StartScreen(FwMobileBase):
         self.click_by_xpath(Locator.button_skip)
         return self
 
-    def click_button_change_week(self):
-        self.click_by_xpath(Locator.change_week)
-        return self
+    def skip_tutorial(self):
+        self.click_button_skip()
+        time.sleep(1)
+        for _ in range(13):
+            self.click_by_xpath(Locator.skip_tutorial)
+        return self.manager.schedule_screen
+

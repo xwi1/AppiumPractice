@@ -28,8 +28,10 @@ class AppiumDriverInstance:
             options.ignore_hidden_api_policy_error = True
             options.language = self.settings.mobile_stand[self.mobile_stand]['language']
             options.locale = self.settings.mobile_stand[self.mobile_stand]['locale']
+            options.new_command_timeout = 5
 
             self.driver = webdriver.Remote(self.settings.mobile_stand['appium_server'], options=options)
+            self.driver.implicitly_wait(3)
         return self.driver
 
     def stop_driver(self):

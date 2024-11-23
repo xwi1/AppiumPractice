@@ -8,8 +8,6 @@ class MobileBase(TestBase):
 
     def setup_class(self):
         #self.APP.emulator_instance.start_emulator()
-        os.system('adb wait-for-device')
-        subprocess.run('adb shell service call alarm 3 s16 Europe/Moscow')
         pass
 
     def setup_method(self):

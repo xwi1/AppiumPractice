@@ -6,6 +6,7 @@ from FW.emulator_instance import EmulatorInstance
 from FW.fw_mobile_base import FwMobileBase
 from FW.mail.main_page import MainPage
 from FW.mail.search_page import SearchPage
+from FW.schedule_screen import ScheduleScreen
 from FW.start_screen import StartScreen
 
 
@@ -22,3 +23,4 @@ class ApplicationManager:
         self.emulator_instance = EmulatorInstance()
         self.appium_instance = AppiumDriverInstance()
         self.start_screen = StartScreen(self)
+        self.schedule_screen = ScheduleScreen(self)
