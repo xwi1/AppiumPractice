@@ -20,5 +20,15 @@ class Settings:
                 'appActivity': 'com.example.pu_app.MainActivity',
                 'language': 'ru',
                 'locale': 'RU'
+            },
+        'Xiaomi M2191K9AG':
+            {
+                'platformName': 'Android',
+                'platformVersion': '33',
+                'deviceName': 'Xiaomi M2191K9AG',
+                'appPackage': 'com.ngieu.scheduleapp',
+                'appActivity': 'com.example.pu_app.MainActivity',
+                'language': 'ru',
+                'locale': 'RU'
             }
     }
