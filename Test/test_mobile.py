@@ -7,5 +7,7 @@ class TestMobile(MobileBase):
 
     def test_run(self):
         time.sleep(3)
-        schedule_screen = self.APP.start_screen.skip_tutorial()
-        print()
+        start_screen = self.APP.start_screen.skip_tutorial()
+        schedule_screen = self.APP.schedule_screen.click_input_search()
+        
+        

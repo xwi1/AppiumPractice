@@ -3,6 +3,7 @@ import time
 from appium.webdriver.common.appiumby import AppiumBy
 from selenium.common import StaleElementReferenceException
 
+
 from FW.FW_Base import FWBase
 
 
@@ -15,6 +16,9 @@ class FwMobileBase(FWBase):
 
     def find_element(self, by, value):
         return self.get_driver().find_element(by, value)
+    
+    def find_element_by_xpath(self, value):
+        return self.get_driver().find_element(AppiumBy.XPATH, value)
 
     def click_by_xpath(self, locator):
         element = self.find_element(by=AppiumBy.XPATH, value=locator)
@@ -22,6 +26,7 @@ class FwMobileBase(FWBase):
 
     def appium_driver_sleep(self, time):
         self.get_driver().implicitly_wait(time)
+        
 
     def appium_driver_switch_to(self, context):
         self.get_driver().switch_to.context(context)

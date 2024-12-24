@@ -14,21 +14,11 @@ class Settings:
         'Pixel_6':
             {
                 'platformName': 'Android',
-                'platformVersion': '34',
+                'platformVersion': '35',
                 'deviceName': 'Pixel_6',
                 'appPackage': 'com.ngieu.scheduleapp',
                 'appActivity': 'com.example.pu_app.MainActivity',
-                'language': 'ru',
-                'locale': 'RU'
-            },
-        'Xiaomi M2191K9AG':
-            {
-                'platformName': 'Android',
-                'platformVersion': '33',
-                'deviceName': 'Xiaomi M2191K9AG',
-                'appPackage': 'com.ngieu.scheduleapp',
-                'appActivity': 'com.example.pu_app.MainActivity',
-                'language': 'ru',
-                'locale': 'RU'
+                'language': 'en',
+                'locale': 'US'
             }
     }

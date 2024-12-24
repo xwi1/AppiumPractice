@@ -9,7 +9,7 @@ from Data.settings import Settings
 
 class AppiumDriverInstance:
 
-    mobile_stand = 'Xiaomi M2191K9AG'
+    mobile_stand = 'Pixel_6'
 
     def __init__(self):
         self.settings = Settings
